@@ -1,0 +1,77 @@
+body {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif, Arial Black, Gadget;
+    overflow: hidden;
+    background: #545454;
+    background: -webkit-gradient(linear, left top, right bottom, from(#545454), color-stop(.5, #7e7e7e), to(#545454)) fixed;
+    background: -webkit-linear-gradient(45deg, #545454, #7e7e7e .5, #545454);
+    background: -moz-linear-gradient(45deg, #545454, #7e7e7e .5, #545454);
+    background: -o-linear-gradient(45deg, #545454, #7e7e7e .5, #545454);
+}
+section {
+    display: block;
+    float: left;
+    min-height: 450px;
+    width: 100%;
+}
+a {
+    display: block;
+    float: left;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0;
+    color: #E90808;
+    background: #d7d7d7;
+    font-weight: bold;
+    font-size: 30px;
+    border-top: 5px solid #999;
+    border-bottom: 5px solid #999
+}
+div {
+    display: block;
+    float: left;
+    height: 150px;
+    width: 205px;
+    border: 10px solid #999;
+    margin: 10px;
+    -webkit-transition: all .85s linear;
+    -moz-transition: all .85s linear;
+    -o-transition: all .85s linear;
+    -ms-transition: all .85s linear;
+    transition: all .85s linear;
+    margin-top: 20px;
+}
+div[class="web"] {
+    background: url(images/web.png) no-repeat;
+}
+div[class="graphic"] {
+    background: url(images/graphic.png) no-repeat;
+}
+div[class="music"] {
+    background: url(images/music.png) no-repeat;
+}
+a:focus[class] {
+    background: #ebebeb;
+    outline: none;
+}
+a[class="web"]:focus ~ div:not([class="web"]) {
+    height: 0px;
+    width: 0px;
+    border: none;
+    margin: 0;
+}
+a[class="graphic"]:focus ~ div:not([class="graphic"]) {
+    height: 0px;
+    width: 0px;
+    border: none;
+    margin: 0;
+}
+a[class="music"]:focus ~ div:not([class="music"]) {
+    height: 0px;
+    width: 0px;
+    border: none;
+    margin: 0;
+}
